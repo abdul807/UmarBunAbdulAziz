@@ -1,0 +1,220 @@
+import React from "react";
+
+import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faChevronDown} from '@fortawesome/free-brands-svg-icons'; // Import the Facebook icon
+import {
+  faPalette,
+  faMosque,
+  faTicket,
+  faMedal,
+  faCalendar,
+  faSchool,
+  faUsers,
+} from "@fortawesome/free-solid-svg-icons";
+
+import "./Offers.css"; // Import your CSS file for styling
+import { faServicestack } from "@fortawesome/free-brands-svg-icons";
+
+const Offers = () => {
+  // text-[#00a401] - deep green
+  // text-[#a7c263] -light green
+
+  return (
+    <section className="-mt-50 sm:mt-20 p-2 sm:mb-20">
+      <div className="max-w-5xl flex flex-col sm:flex-row justify-center items-center sm:items-start gap-10 mx-auto text-center ">
+        <div className="sm:w-1/3" data-aos="zoom-in">
+          <div className="heading">
+            <h1 className="capitalize border-b-3 pb-4 border-[#06724b] mb-5 text-center  text-3xl sm:text-left text-[#06724b]  ">
+              welcome!
+            </h1>
+          </div>
+          <p className="leading-7 sm:text-lg sm:text-left text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Blanditiis, nemo dolorum voluptatum necessitatibus hic sed officia
+            maxime repellat obcaecati dignissimos, aut similique repudiandae
+            laudantium fugit minus ab modi beatae voluptas! Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Dignissimos voluptatum modi
+            consequuntur autem eum laudantium voluptatibus debitis ratione
+            soluta amet.
+          </p>
+          <button className="capitalize border-1 border-[#424874] text-white flex justify-center items-center text-center sm:justify-start sm:items-left mt-3 bg-[#06724b] font-bold px-7 py-2 shadow-5xl w-full sm:w-2/3 rounded-xl">
+            Learn more about us
+          </button>
+        </div>
+
+        <div className="sm:w-2/3 flex sm:flex-row flex-col h-full items-stretch">
+          <div className="flex-1">
+            <div
+              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+              data-aos="zoom-in"
+            >
+              <div className="icon">
+                <FontAwesomeIcon
+                  icon={faTicket}
+                  className="text-5xl text-[#06724b]"
+                />
+              </div>
+              <div className="message text-left text-sm leading-5">
+                <h1 className="text-center font-bold text-lg text-start pt-2">
+                  Admissions
+                </h1>
+                <p className="text-sm w-60 p-5">
+                  To visit LCS contact the admissions team at
+                  ubaislamicInstitue@gmail.com. Click here to apply.
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+            >
+              <div className="icon">
+                <FontAwesomeIcon
+                  icon={faMosque}
+                  className="text-5xl text-[#06724b]"
+                />
+              </div>
+              <div className="message text-left text-sm leading-5">
+                <h1 className="text-center font-bold text-lg text-start pt-2">
+                  Arabic Education
+                </h1>
+                <p className="text-sm w-60 p-5">
+                  Click for information about the exciting learning going on in
+                  our Arabic school.
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+            >
+              <div className="icon">
+                <FontAwesomeIcon
+                  icon={faPalette}
+                  className="text-5xl text-[#06724b]"
+                />
+              </div>
+              <div className="message text-left text-sm leading-5">
+                <h1 className="text-center font-bold text-lg text-start pt-2">
+                  Arts
+                </h1>
+                <p className="text-sm w-60 p-5">
+                  Here you can see how creative UBA students are in 
+                  poetry and recitation of Holy Quran.
+                </p>
+              </div>
+            </div>
+            <Link to="/sports">
+            <div
+              data-aos="zoom-in"
+              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+            >
+              <div className="icon">
+                <FontAwesomeIcon
+                  icon={faMedal}
+                  className="text-5xl text-[#06724b]"
+                />
+              </div>
+              <div className="message text-left text-sm leading-5">
+                <h1 className="text-center font-bold text-lg text-start pt-2">
+                  Atletics
+                </h1>
+                <p className="text-sm w-60 p-5">
+                  Click here for UBa Athletics information including
+                  Inter-Organization event information.
+                </p>
+              </div>
+            </div>
+            </Link>
+          </div>
+          <div className="flex-1">
+            <div
+              data-aos="zoom-in"
+              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+            >
+              <div className="icon">
+                <FontAwesomeIcon
+                  icon={faCalendar}
+                  className="text-5xl text-[#06724b]"
+                />
+              </div>
+              <div className="message text-left text-sm leading-5">
+                <h1 className="text-center font-bold text-lg text-start pt-2">
+                  Calenders
+                </h1>
+                <p className="text-sm w-60 p-5">
+                  Visit our calendar page where you can view events and download
+                  the holiday calendar.
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+            >
+              <div className="icon">
+                <FontAwesomeIcon
+                  icon={faSchool}
+                  className="text-5xl text-[#06724b]"
+                />
+              </div>
+              <div className="message text-left text-sm leading-5">
+                <h1 className="text-center font-bold text-lg text-start pt-2">
+                  Circular Education
+                </h1>
+                <p className="text-sm w-60 p-5">
+                  Click for information about the exciting learning going on in
+                  our Circular school.
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+            >
+              <div className="icon">
+                <FontAwesomeIcon
+                  icon={faUsers}
+                  className="text-5xl text-[#06724b]"
+                />
+              </div>
+              <div className="message text-left text-sm leading-5">
+                <h1 className="text-center font-bold text-lg text-start pt-2">
+                  Community
+                </h1>
+                <p className="text-sm w-60 p-5">
+                  Find out about our active Parent Teacher Organization and get
+                  involved.
+                </p>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+            >
+              <div className="icon">
+                <FontAwesomeIcon
+                  icon={faServicestack}
+                  className="text-5xl text-[#06724b]"
+                />
+              </div>
+              <div className="message text-left text-sm leading-5">
+                <h1 className="text-center font-bold text-lg text-start pt-2">
+                  Service
+                </h1>
+                <p className="text-sm w-60 p-5">
+                  Service Learning is an important part of LCS. Find out more
+                  here.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Offers;
