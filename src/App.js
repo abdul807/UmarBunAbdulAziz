@@ -1,4 +1,4 @@
-import "./App.css";
+
 import React, { useEffect } from "react";
 import HomePage from "./pages/HomePage";
 import AOS from "aos";
