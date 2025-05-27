@@ -31,13 +31,12 @@ const Offers = () => {
             </h1>
           </div>
           <p className="leading-7 sm:text-lg sm:text-left text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Blanditiis, nemo dolorum voluptatum necessitatibus hic sed officia
-            maxime repellat obcaecati dignissimos, aut similique repudiandae
-            laudantium fugit minus ab modi beatae voluptas! Lorem ipsum dolor
-            sit amet, consectetur adipisicing elit. Dignissimos voluptatum modi
-            consequuntur autem eum laudantium voluptatibus debitis ratione
-            soluta amet.
+            Umar Bun Abdul Aziz Islamic Institute is a non-profit organization
+            dedicated to providing quality Islamic education and community
+            services. Our mission is to promote the teachings of Islam, foster a
+            sense of community, and empower individuals through knowledge and
+            spiritual growth.  We offer a range of programs including Quranic studies, Arabic language courses, and community outreach initiatives. Our dedicated team works tirelessly to create a welcoming environment for all, ensuring that everyone has access to the resources they need to thrive.
+
           </p>
           <button className="capitalize border-1 border-[#424874] text-white flex justify-center items-center text-center sm:justify-start sm:items-left mt-3 bg-[#06724b] font-bold px-7 py-2 shadow-5xl w-full sm:w-2/3 rounded-xl">
             Learn more about us
@@ -101,32 +100,32 @@ const Offers = () => {
                   Arts
                 </h1>
                 <p className="text-sm w-60 p-5">
-                  Here you can see how creative UBA students are in 
-                  poetry and recitation of Holy Quran.
+                  Here you can see how creative UBA students are in poetry and
+                  recitation of Holy Quran.
                 </p>
               </div>
             </div>
             <Link to="/sports">
-            <div
-              data-aos="zoom-in"
-              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
-            >
-              <div className="icon">
-                <FontAwesomeIcon
-                  icon={faMedal}
-                  className="text-5xl text-[#06724b]"
-                />
+              <div
+                data-aos="zoom-in"
+                className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+              >
+                <div className="icon">
+                  <FontAwesomeIcon
+                    icon={faMedal}
+                    className="text-5xl text-[#06724b]"
+                  />
+                </div>
+                <div className="message text-left text-sm leading-5">
+                  <h1 className="text-center font-bold text-lg text-start pt-2">
+                    Atletics
+                  </h1>
+                  <p className="text-sm w-60 p-5">
+                    Click here for UBa Athletics information including
+                    Inter-Organization event information.
+                  </p>
+                </div>
               </div>
-              <div className="message text-left text-sm leading-5">
-                <h1 className="text-center font-bold text-lg text-start pt-2">
-                  Atletics
-                </h1>
-                <p className="text-sm w-60 p-5">
-                  Click here for UBa Athletics information including
-                  Inter-Organization event information.
-                </p>
-              </div>
-            </div>
             </Link>
           </div>
           <div className="flex-1">
@@ -185,8 +184,8 @@ const Offers = () => {
                   Community
                 </h1>
                 <p className="text-sm w-60 p-5">
-                  Find out about our active Parent Teacher Organization and get
-                  involved.
+                  Find out about our active Parent Teacher Organization,
+                  community and get involved.
                 </p>
               </div>
             </div>
@@ -206,7 +205,7 @@ const Offers = () => {
                 </h1>
                 <p className="text-sm w-60 p-5">
                   Service Learning is an important part of LCS. Find out more
-                  here.
+                  here and everything.
                 </p>
               </div>
             </div>
