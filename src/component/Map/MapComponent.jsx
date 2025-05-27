@@ -14,13 +14,12 @@ const MapComponent = () => {
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
 
     // Add a marker on the map
-    const marker1 = L.marker([5.6037, -0.1870]).addTo(map);
-    const marker2 = L.marker( [6.0821, -0.2669]).addTo(map);
+    const marker1 = L.marker([5.9333, -0.9833]).addTo(map);
+
 
 
     // Add a popup to the marker
-    marker1.bindPopup("<b>Accra Ghana.</b>").openPopup();
-    marker2.bindPopup("<b>Koforidua, Ghana.</b>").openPopup();
+    marker1.bindPopup("<b>Akim Oda.</b>").openPopup();
 
 
     // Cleanup when the component unmounts

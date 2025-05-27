@@ -1,17 +1,16 @@
 import React from "react";
 import Navbar from "../component/Navbar";
+import Galler from "../component/Gallery/Galler";
 import Footer from "../component/Footer/Footer";
-import Atletic from "../component/Atlete/Atletic";
 
-
-const AtleticPage = () => {
+const GalleryPage = () => {
   return (
-    <div className="h-screen">
+    <>
       <Navbar />
-      <Atletic />
+      <Galler />
       <Footer />
-    </div>
+    </>
   );
 };
 
-export default AtleticPage;
+export default GalleryPage;

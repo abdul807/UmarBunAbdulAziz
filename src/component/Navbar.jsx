@@ -5,10 +5,15 @@ import ServiceModal from "./Modals/ServiceModal";
 import TrainModal from "./Modals/TrainModal";
 import SocialModal from "./Modals/SocialModal";
 import JobModal from "./Modals/JobModal";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp, faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import "./navbar.css";
+import "aos/dist/aos.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronDown,
+  faChevronUp,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+import "./navbar.css";
 
 const links = [
   {
@@ -36,7 +41,7 @@ const links = [
   },
   {
     text: "Locations & contact",
-    path: "#",
+    path: "/location-contact",
   },
 ];
 
@@ -54,10 +59,10 @@ const Navbar = () => {
       {showAction && (
         <section
           id="id"
-          className="absolute w-full bg-white h-screen top-0 left-0 text-5xl flex flex-col justify-center items-center z-50"
+          className="absolute w-full bg-white h-screen top-0 left-0 text-5xl flex flex-col justify-center items-center z-100" data-aos="slide-left" data-aos-duration="400"
         >
           <button
-            className="text-8xl self-end absolute top-0 px-6 text-[#06724b]"
+            className="text-8xl self-end absolute top-0 px-6 text-[#06724b] "
             onClick={toggleMenu}
           >
             &times;
@@ -69,19 +74,26 @@ const Navbar = () => {
                 onMouseLeave={() => setHovered(null)}
                 className={`relative flex gap-3 justify-center items-center`}
               >
-                <NavLink to={link.path} className="text-xl font-bold">
+                <NavLink
+                  to={link.path}
+                  className="text-xl font-bold"
+                  onClick={!link.modal ? toggleMenu : link.modal}
+                
+                >
                   {link.text}
                 </NavLink>
-                {link.font && <FontAwesomeIcon icon={faChevronRight} className="text-sm" />}
+                {link.font && (
+                  <FontAwesomeIcon icon={faChevronRight} className="text-sm" />
+                )}
               </div>
             ))}
           </nav>
         </section>
       )}
 
-      <header className="bg-white flex relative justify-between items-center px-10 shadow-md h-20">
+      <header className="bg-red flex relative justify-between items-center px-10 shadow-md h-20">
         <h1 className="sm:text-3xl text-xl font-extrabold text-[#06724b]">
-          <Link to='/'>Umar Bun Abdul Aziz</Link>
+          <Link to="/">Umar Bun Abdul Aziz</Link>
         </h1>
 
         <button
@@ -100,14 +112,25 @@ const Navbar = () => {
               onMouseLeave={() => setHovered(null)}
               className={`relative flex justify-center items-center`}
             >
-              <NavLink to={link.path} className="text-lg text-[#06724b] hover:font-bold">
+              <NavLink
+                to={link.path}
+                className="text-lg text-[#06724b] hover:font-bold"
+              >
                 {link.text}
+                {link.font && hovered === link.text ? (
+                  <FontAwesomeIcon
+                    icon={faChevronUp}
+                    className="text-[#00a401] font-bold"
+                  />
+                ) : (
+                  link.font && (
+                    <FontAwesomeIcon
+                      icon={faChevronDown}
+                      className="text-[#00a401]"
+                    />
+                  )
+                )}
               </NavLink>
-              {link.font && hovered === link.text ? (
-                <FontAwesomeIcon icon={faChevronUp} className="text-[#00a401]" />
-              ) : (
-                link.font && <FontAwesomeIcon icon={faChevronDown} className="text-[#00a401]" />
-              )}
 
               {hovered === link.text && link.modal && link.modal}
             </div>

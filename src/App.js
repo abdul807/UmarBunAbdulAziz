@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import HomePage from "./pages/HomePage";
 import AOS from "aos";
@@ -6,6 +5,8 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS file
 import { Route, Routes } from "react-router-dom";
 import AtleticPage from "./pages/AtleticPage";
+import LocationPage from "./pages/LocationPage";
+import GalleryPage from "./pages/GalleryPage";
 function App() {
   // Initialize AOS
 
@@ -22,6 +23,8 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/sports" element={<AtleticPage />} />
+      <Route path="/location-contact" element={<LocationPage />} />
+      <Route path="/gallery" element={<GalleryPage />} />
 
       <Route path="*" element={<HomePage />} />
     </Routes>
