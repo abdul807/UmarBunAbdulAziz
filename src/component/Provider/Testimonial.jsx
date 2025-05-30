@@ -1,6 +1,6 @@
 import React from "react";
 import proImage from "../../assets/yourman.jpg";
-import girl from "../../assets/girl2.jpg"
+import girl from "../../assets/girl2.jpg";
 import "aos/dist/aos.css";
 const Testimonial = () => {
   return (
@@ -19,7 +19,10 @@ const Testimonial = () => {
         <div className="flex sm:flex-row flex-col mb-20 justify-center items-center gap-5">
           <div className="sm:w-1/2 h-full flex flex-col justify-center items-center text-center">
             <blockquote>
-              <p className="sm:text-justify p-5 sm:leading-7 sm:text-lg" data-aos="slide-right">
+              <p
+                className="sm:text-justify p-5 sm:leading-7 sm:text-lg"
+                data-aos="slide-right"
+              >
                 UBA has truly shaped me into a better human being—both in my
                 Islamic faith and in worldly matters. During my time here, I had
                 the opportunity to memorize the entire Qur'an, study numerous
@@ -43,14 +46,17 @@ const Testimonial = () => {
             <img
               src={proImage}
               alt="Provider"
-              className="w-full h-130 object-contain"
+              className="w-80 h-90 object-cover"
             />
           </div>
         </div>
-        <div className="flex sm:flex-row-reverse flex-col text-center  justify-center items-stretch gap-5 h-200">
-          <div className="sm:w-1/2 h-full">
+        <div className="flex sm:flex-row flex-col mb-20 justify-center items-center gap-5">
+          <div className="sm:w-1/2 h-full flex flex-col justify-center items-center text-center sm:mb-30">
             <blockquote>
-              <p className="sm:text-justify p-5 sm:leading-8 sm:text-lg" data-aos="zoom-in">
+              <p
+                className="sm:text-justify p-5 sm:leading-8 sm:text-lg"
+                data-aos="zoom-in"
+              >
                 UBA has truly shaped me into a better human being—both in my
                 Islamic faith and in worldly matters. During my time here, I had
                 the opportunity to memorize the entire Qur'an, study numerous
@@ -62,7 +68,9 @@ const Testimonial = () => {
                 spiritual growth. UBA – Children Today, Leaders Tomorrow.
               </p>
               <footer>
-                <strong className="text-[#00a401]">Mariam Ali Yaroo</strong>
+                <strong className="text-[#00a401] text-center">
+                  Ayisha Ali Yaroo
+                </strong>
               </footer>
               <p>
                 <em>UBA – Children Today, Leaders Tomorrow.</em>
@@ -72,9 +80,10 @@ const Testimonial = () => {
           <div className="sm:w-1/2 h-full" data-aos="slide-right">
             {" "}
             <img
+              alt="profile"
               src={girl}
-              alt="Provider"
-              className="w-full h-130 object-contain"
+              className="w-80 h-90 object-cover"
+              srcset=""
             />
           </div>
         </div>

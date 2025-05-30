@@ -22,7 +22,7 @@ const Offers = () => {
   // text-[#a7c263] -light green
 
   return (
-    <section className="-mt-50 sm:mt-20 p-2 sm:mb-20">
+    <section className="-mt-50 sm:mt-20 p-2 sm:mb-20" id="about">
       <div className="max-w-5xl flex flex-col sm:flex-row justify-center items-center sm:items-start gap-10 mx-auto text-center ">
         <div className="sm:w-1/3" data-aos="zoom-in">
           <div className="heading">
@@ -35,18 +35,21 @@ const Offers = () => {
             dedicated to providing quality Islamic education and community
             services. Our mission is to promote the teachings of Islam, foster a
             sense of community, and empower individuals through knowledge and
-            spiritual growth.  We offer a range of programs including Quranic studies, Arabic language courses, and community outreach initiatives. Our dedicated team works tirelessly to create a welcoming environment for all, ensuring that everyone has access to the resources they need to thrive.
-
+            spiritual growth. We offer a range of programs including Quranic
+            studies, Arabic language courses, and community outreach
+            initiatives. Our dedicated team works tirelessly to create a
+            welcoming environment for all, ensuring that everyone has access to
+            the resources they need to thrive.
           </p>
           <button className="capitalize border-1 border-[#424874] text-white flex justify-center items-center text-center sm:justify-start sm:items-left mt-3 bg-[#06724b] font-bold px-7 py-2 shadow-5xl w-full sm:w-2/3 rounded-xl">
             Learn more about us
           </button>
         </div>
 
-        <div className="sm:w-2/3 flex sm:flex-row flex-col h-full items-stretch">
+        <div className="sm:w-2/3 flex sm:flex-row flex-col flex-wrap text-wrap h-full items-stretch">
           <div className="flex-1">
             <div
-              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+              className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
               data-aos="zoom-in"
             >
               <div className="icon">
@@ -55,19 +58,19 @@ const Offers = () => {
                   className="text-5xl text-[#06724b]"
                 />
               </div>
-              <div className="message text-left text-sm leading-5">
+              <div className="message text-left text-lg leading-5">
                 <h1 className="text-center font-bold text-lg text-start pt-2">
                   Admissions
                 </h1>
-                <p className="text-sm w-60 p-5">
-                  To visit LCS contact the admissions team at
-                  ubaislamicInstitue@gmail.com. Click here to apply.
+                <p className="text-lg w-60 sm:text-wrap p-5">
+                  To visit UBA contact the admissions team at
+                  ubaislamic@gmail.com. Click here to apply.
                 </p>
               </div>
             </div>
             <div
               data-aos="zoom-in"
-              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+              className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
             >
               <div className="icon">
                 <FontAwesomeIcon
@@ -75,11 +78,11 @@ const Offers = () => {
                   className="text-5xl text-[#06724b]"
                 />
               </div>
-              <div className="message text-left text-sm leading-5">
+              <div className="message text-left text-lg leading-5">
                 <h1 className="text-center font-bold text-lg text-start pt-2">
                   Arabic Education
                 </h1>
-                <p className="text-sm w-60 p-5">
+                <p className="text-lg w-60 sm:text-wrap p-5">
                   Click for information about the exciting learning going on in
                   our Arabic school.
                 </p>
@@ -87,7 +90,7 @@ const Offers = () => {
             </div>
             <div
               data-aos="zoom-in"
-              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+              className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
             >
               <div className="icon">
                 <FontAwesomeIcon
@@ -95,11 +98,11 @@ const Offers = () => {
                   className="text-5xl text-[#06724b]"
                 />
               </div>
-              <div className="message text-left text-sm leading-5">
+              <div className="message text-left text-lg leading-5">
                 <h1 className="text-center font-bold text-lg text-start pt-2">
                   Arts
                 </h1>
-                <p className="text-sm w-60 p-5">
+                <p className="text-lg w-60 sm:text-wrap p-5">
                   Here you can see how creative UBA students are in poetry and
                   recitation of Holy Quran.
                 </p>
@@ -108,7 +111,7 @@ const Offers = () => {
             <Link to="/sports">
               <div
                 data-aos="zoom-in"
-                className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+                className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
               >
                 <div className="icon">
                   <FontAwesomeIcon
@@ -116,11 +119,11 @@ const Offers = () => {
                     className="text-5xl text-[#06724b]"
                   />
                 </div>
-                <div className="message text-left text-sm leading-5">
+                <div className="message text-left text-lg leading-5">
                   <h1 className="text-center font-bold text-lg text-start pt-2">
                     Atletics
                   </h1>
-                  <p className="text-sm w-60 p-5">
+                  <p className="text-lg w-60 sm:text-wrap p-5">
                     Click here for UBa Athletics information including
                     Inter-Organization event information.
                   </p>
@@ -131,7 +134,7 @@ const Offers = () => {
           <div className="flex-1">
             <div
               data-aos="zoom-in"
-              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+              className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
             >
               <div className="icon">
                 <FontAwesomeIcon
@@ -139,11 +142,11 @@ const Offers = () => {
                   className="text-5xl text-[#06724b]"
                 />
               </div>
-              <div className="message text-left text-sm leading-5">
+              <div className="message text-left text-lg leading-5">
                 <h1 className="text-center font-bold text-lg text-start pt-2">
                   Calenders
                 </h1>
-                <p className="text-sm w-60 p-5">
+                <p className="text-lg w-60 sm:text-wrap p-5">
                   Visit our calendar page where you can view events and download
                   the holiday calendar.
                 </p>
@@ -151,7 +154,7 @@ const Offers = () => {
             </div>
             <div
               data-aos="zoom-in"
-              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+              className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
             >
               <div className="icon">
                 <FontAwesomeIcon
@@ -159,11 +162,11 @@ const Offers = () => {
                   className="text-5xl text-[#06724b]"
                 />
               </div>
-              <div className="message text-left text-sm leading-5">
+              <div className="message text-left text-lg leading-5">
                 <h1 className="text-center font-bold text-lg text-start pt-2">
                   Circular Education
                 </h1>
-                <p className="text-sm w-60 p-5">
+                <p className="text-lg w-60 sm:text-wrap p-5">
                   Click for information about the exciting learning going on in
                   our Circular school.
                 </p>
@@ -171,7 +174,7 @@ const Offers = () => {
             </div>
             <div
               data-aos="zoom-in"
-              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+              className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
             >
               <div className="icon">
                 <FontAwesomeIcon
@@ -179,11 +182,11 @@ const Offers = () => {
                   className="text-5xl text-[#06724b]"
                 />
               </div>
-              <div className="message text-left text-sm leading-5">
+              <div className="message text-left text-lg leading-5">
                 <h1 className="text-center font-bold text-lg text-start pt-2">
                   Community
                 </h1>
-                <p className="text-sm w-60 p-5">
+                <p className="text-lg w-60 sm:text-wrap p-5">
                   Find out about our active Parent Teacher Organization,
                   community and get involved.
                 </p>
@@ -191,7 +194,7 @@ const Offers = () => {
             </div>
             <div
               data-aos="zoom-in"
-              className="border-r-1  border-gray-200 border-b-1 flex justify-center items-center gap-2"
+              className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
             >
               <div className="icon">
                 <FontAwesomeIcon
@@ -199,11 +202,11 @@ const Offers = () => {
                   className="text-5xl text-[#06724b]"
                 />
               </div>
-              <div className="message text-left text-sm leading-5">
+              <div className="message text-left text-lg leading-5">
                 <h1 className="text-center font-bold text-lg text-start pt-2">
                   Service
                 </h1>
-                <p className="text-sm w-60 p-5">
+                <p className="text-lg w-60 sm:text-wrap p-5">
                   Service Learning is an important part of LCS. Find out more
                   here and everything.
                 </p>

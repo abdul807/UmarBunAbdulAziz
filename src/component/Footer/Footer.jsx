@@ -14,10 +14,10 @@ const Footer = () => {
       <div className="bg-[#06724b] flex flex-col text-center sm:w-full text-white py-10 px-10 text-[#00a401]">
         <div className="flex flex-col justify-center items-center gap-5   sm:flex-row sm:justify-around sm:items-start mb-20">
           <div className="logo font-extrabold text-2xl text-white sm:text-5xl">
-            UBA
+            Umar Bun Abdul Aziz
           </div>
           <div className="home flex flex-col gap-2" id="home">
-            <Link className="">Home</Link>
+            <Link to="/" className="">Home</Link>
             <Link className="text-sm text-white hover:scale-110">About Us</Link>
             <Link className="text-sm text-white hover:scale-110">Services</Link>
           </div>
