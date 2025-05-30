@@ -23,11 +23,11 @@ const Image = () => {
             Shaping The Leaders of the next generation through Education & Islam
           </h1>
         </div>
-        <div className="text-white capitalize sm:text-justify text-lg leading-7 mt-4 text-center italic">
+        <div className="text-white capitalize sm:text-justify text- leading-7 mt-4 text-center italic">
           Children today, leaders tomorrow
         </div>
         <div className="sm:justify-start flex justify-center space-x-4 text-white mt-20">
-          <button className="capitalize bg-white px-3 py-3 text-[#06724b]  sm:px-15  font-extrabold shadow-lg">
+          <button className="capitalize bg-white px-3 py-3 text-[#06724b]  sm:px-15  font-extrabold shadow-">
             contact us
           </button>
           <Link
