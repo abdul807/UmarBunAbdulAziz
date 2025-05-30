@@ -41,15 +41,15 @@ const Offers = () => {
             welcoming environment for all, ensuring that everyone has access to
             the resources they need to thrive.
           </p>
-          <button className="capitalize border-1 border-[#424874] text-white flex justify-center items-center text-center sm:justify-start sm:items-left mt-3 bg-[#06724b] font-bold px-7 py-2 shadow-5xl w-full sm:w-2/3 rounded-xl">
+          <Link className="cursor-pointer capitalize border-1 border-[#424874] text-white flex justify-center items-center text-center sm:justify-start sm:items-left mt-3 bg-[#06724b] font-bold px-7 py-2 shadow-5xl w-full sm:w-2/3 rounded-xl">
             Learn more about us
-          </button>
+          </Link>
         </div>
 
         <div className="sm:w-2/3 flex sm:flex-row flex-col flex-wrap text-wrap h-full items-stretch">
           <div className="flex-1">
-            <div
-              className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
+            <Link to='/training'
+              className="cursor-pointer border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
               data-aos="zoom-in"
             >
               <div className="icon">
@@ -67,10 +67,10 @@ const Offers = () => {
                   ubaislamic@gmail.com. Click here to apply.
                 </p>
               </div>
-            </div>
-            <div
+            </Link>
+            <Link to="/training"
               data-aos="zoom-in"
-              className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
+              className="cursor-pointer border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
             >
               <div className="icon">
                 <FontAwesomeIcon
@@ -87,7 +87,7 @@ const Offers = () => {
                   our Arabic school.
                 </p>
               </div>
-            </div>
+            </Link>
             <div
               data-aos="zoom-in"
               className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
@@ -152,9 +152,9 @@ const Offers = () => {
                 </p>
               </div>
             </div>
-            <div
+            <Link to="/training"
               data-aos="zoom-in"
-              className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
+              className="cursor-pointer border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
             >
               <div className="icon">
                 <FontAwesomeIcon
@@ -171,7 +171,7 @@ const Offers = () => {
                   our Circular school.
                 </p>
               </div>
-            </div>
+            </Link>
             <div
               data-aos="zoom-in"
               className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"

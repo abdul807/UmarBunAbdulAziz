@@ -1,10 +1,9 @@
 import React from "react";
+import construction from "../../assets/construction.svg"; // Assuming the image is in the assets folder
 
-import construction from "../../assets/construction.svg";
-
-const Location = () => {
+const About = () => {
   return (
-    <div className="h-screen flex sm:flex-col items-center mt-50 justify-center mb-20 ">
+    <div className="h-screen flex sm:flex-col items-center sm:mt-50 justify-center sm:mb-20 ">
       {" "}
       <div className="max-w-5xl mx-auto flex flex-col gap-10 items-center justify-center  h-screen">
         <img src={construction} alt="" srcset="" />
@@ -14,4 +13,4 @@ const Location = () => {
   );
 };
 
-export default Location;
+export default About;

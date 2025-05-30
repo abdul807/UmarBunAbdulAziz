@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="footer text-[#00a401]" id="footer">
       <div className="bg-[#06724b] flex flex-col text-center sm:w-full text-white py-10 px-10 text-[#00a401]">
-        <div className="flex flex-col justify-center items-center gap-5   sm:flex-row sm:justify-around sm:items-start mb-20">
+        <div className="flex flex-col justify-center items-center gap-5   sm:flex-row sm:justify-around sm:items-start mb-20 ">
           <div className="logo font-extrabold text-2xl text-white sm:text-5xl">
             Umar Bun Abdul Aziz
           </div>
@@ -28,22 +28,12 @@ const Footer = () => {
               Privacy Policy
             </Link>
           </div>
-          {/* <div className="home flex flex-col gap-2" id="home">
-            <Link>Service Centers</Link>
-            <Link className="text-sm text-[#A6B1E1] hover:scale-110"> Aboabo</Link>
-            <Link className="text-sm text-[#A6B1E1] hover:scale-110" >Old Town</Link>
-          </div>
-          <div className="home flex flex-col gap-2" id="home">
-            <Link>About Uba</Link>
-            <Link className="text-sm text-[#A6B1E1] hover:scale-110">Contact</Link>
-            <Link className="text-sm text-[#A6B1E1] hover:scale-110">Insights</Link>
-          </div> */}
         </div>
-        <div className="flex sm:flex-row flex-col justify-center items-center gap-10 sm:justify-between sm:items-center mb-20">
-          <p className="text-white text-sm ">
+        <div className="flex sm:flex-row flex-col  justify-center items-center gap-10 sm:justify-between sm:items-center mb-5">
+          <p className="text-white text-sm sm:relative sm:left-38">
             © 2025 Umar Bun Abdul Aziz | All rights reserved
           </p>
-          <div className="icons flex">
+          <div className="icons flex sm:relative sm:right-34">
             <Link
               to="https://web.facebook.com/profile.php?id=100076396008442"
               className="text-white mx-2"
