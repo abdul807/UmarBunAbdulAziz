@@ -1,14 +1,16 @@
 import React from "react";
-import logo from "../../assets/logo.jpg";
-import ball from "../../assets/ball.jpg";
-import topImage from "../../assets/bignew.jpeg";
 
+import construction from "../../assets/construction.svg";
 
 const Atletic = () => {
   return (
-
-     <div className="h-screen flex sm:flex-col items-center justify-center ">this is the atlete page</div>
-
+    <div className="h-screen flex sm:mb-20 sm:mt-50 sm:flex-col items-center justify-center ">
+      {" "}
+      <div className="max-w-5xl mx-auto flex flex-col gap-10 items-center justify-center h-screen">
+        <img src={construction} alt="" srcset="" />
+        <h3 className="text-xl">Page Under Construction</h3>
+      </div>
+    </div>
 
     // <div className="h-screen flex sm:flex-col items-center justify-center ">
     //   <div className={`sm:w-full h-[750px] relative`} data-aos="zoom-in">

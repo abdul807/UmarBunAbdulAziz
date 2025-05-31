@@ -7,6 +7,9 @@ import { Route, Routes } from "react-router-dom";
 import AtleticPage from "./pages/AtleticPage";
 import LocationPage from "./pages/LocationPage";
 import GalleryPage from "./pages/GalleryPage";
+import AboutPage from "./pages/AboutPage";
+import TrainingPage from "./pages/TrainingPage";
+import ScrollToTop from "./component/ScrollToTop";
 function App() {
   // Initialize AOS
 
@@ -20,14 +23,19 @@ function App() {
   }, []);
 
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/sports" element={<AtleticPage />} />
-      <Route path="/location-contact" element={<LocationPage />} />
-      <Route path="/gallery" element={<GalleryPage />} />
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/social" element={<AtleticPage />} />
+        <Route path="/location-contact" element={<LocationPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/training" element={<TrainingPage />} />
 
-      <Route path="*" element={<HomePage />} />
-    </Routes>
+        <Route path="*" element={<HomePage />} />
+      </Routes>
+    </>
   );
 }
 

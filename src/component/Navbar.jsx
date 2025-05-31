@@ -1,18 +1,12 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import About from "./Modals/About";
-import ServiceModal from "./Modals/ServiceModal";
+
+
 import TrainModal from "./Modals/TrainModal";
 import SocialModal from "./Modals/SocialModal";
-import JobModal from "./Modals/JobModal";
+
 import "aos/dist/aos.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronDown,
-  faChevronUp,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
 import "./navbar.css";
 
 const links = [
@@ -23,19 +17,19 @@ const links = [
   },
   {
     text: "About UBA",
-    path: "/#about",
+    path: "/about",
     // modal: <About />,
     font: true,
   },
   {
     text: "UBA Training",
-    path: "#",
+    path: "/training",
     modal: <TrainModal />,
     font: true,
   },
   {
     text: "UBA Social",
-    path: "/sports",
+    path: "/social",
     modal: <SocialModal />,
     font: true,
   },
@@ -46,7 +40,7 @@ const links = [
 ];
 
 const Navbar = () => {
-  const [hovered, setHovered] = useState(null);
+
   const [showAction, setShowAction] = useState(false);
 
   const toggleMenu = () => {
