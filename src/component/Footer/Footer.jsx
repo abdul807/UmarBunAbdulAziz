@@ -16,16 +16,24 @@ const Footer = () => {
           <div className="logo font-extrabold text-2xl text-white sm:text-5xl">
             Umar Bun Abdul Aziz
           </div>
-          <div className="home flex flex-col gap-2" id="home">
-            <Link to="/" className="">Home</Link>
-            <Link className="text-sm text-white hover:scale-110">About Us</Link>
-            <Link className="text-sm text-white hover:scale-110">Services</Link>
-          </div>
-          <div className="home flex flex-col gap-2" id="home">
-            <Link>Company</Link>
-            <Link className="text-sm text-white hover:scale-110">Imprint</Link>
-            <Link className="text-sm text-white hover:scale-110">
-              Privacy Policy
+          <div
+            className="home flex flex-col sm:flex-row items-center gap-3"
+            id="home"
+          >
+            <Link to="/" className="text-lg text-white hover:scale-110">
+              Home
+            </Link>
+            <Link to='/about' className="text-lg text-white hover:scale-110">
+              About UBA
+            </Link>
+            <Link to='/training' className="text-lg text-white hover:scale-110">
+              UBA Training
+            </Link>{" "}
+            <Link to='/social' className="text-lg text-white hover:scale-110">
+              UBA Social
+            </Link>
+            <Link to='/location-contact' className="text-lg text-white hover:scale-110">
+              Location & Contact
             </Link>
           </div>
         </div>

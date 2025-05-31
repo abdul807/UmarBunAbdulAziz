@@ -29,7 +29,7 @@ const links = [
   },
   {
     text: "UBA Social",
-    path: "/sports",
+    path: "/social",
     modal: <SocialModal />,
     font: true,
   },
