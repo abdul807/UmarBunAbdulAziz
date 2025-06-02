@@ -1,11 +1,11 @@
 
-import backgroundImage from "../../assets/backfound.jpg";
 
-const Background = () => {
+
+const Background = (props) => {
   return (
     <div
       className="bg-cover bg-center h-50 sm:h-100 sm:bg-fixed"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `url(${props.backgroundImage})` }}
     ></div>
   );
 };

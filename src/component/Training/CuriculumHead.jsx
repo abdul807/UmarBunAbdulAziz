@@ -1,19 +1,12 @@
-import React from "react";
-import profile from "../../assets/pro1.jpg";
-import gado from "../../assets/asistant.jpg"
-import razak from "../../assets/malamrazak.jpg"
-import abu from "../../assets/abu.jpg"
-import "aos/dist/aos.css";
+import abu from "../../assets/rauf.jpg";
+import razak from "../../assets/malamrazak.jpg";
 
-const Conversation = () => {
+const CuriculumHead = () => {
   return (
-    <section id="conversation" className=" bg-[#F4EEFF]" >
+    <section id="conversation" className=" bg-[#F4EEFF]">
       <div className="bg-white text-center py-5 bg-[#F4EEFF] relative w-full">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="heading capitalize font-bold text-2xl lg:text-5xl text-center text-[#06724b] p-4" data-aos="fade-down">
-            Let us have a conversation
-          </h1>
-          <div className="flex flex-col justify-center items-center lg:max-w-5xl lg:flex-row lg:flex-wrap gap-5 md:justify-start md:items-start m-10">
+          <div className="flex flex-col justify-center items-center lg:max-w-5xl lg:flex-row lg:flex-wrap gap-20 md:justify-start md:items-start m-10">
             <div data-aos="zoom-in" className="max-w-[500px]">
               <img
                 alt="profile"
@@ -23,12 +16,12 @@ const Conversation = () => {
               />
               <p className="lg:text-left mt-2 text-[#06724b] font-bold text-center">
                 <span className="text-center lg:text-left mt-2 text-[#06724b] font-bold inline-block border-b-2 border-[#06724b] pb-1">
-                Sheik
+                Sir
                 </span>
-                Abubakar Ali Koli
+                 Abdul Rauf Mohammed Umar
               </p>
               <p className=" text-center lg:text-left mt-2 text-[#06724b] font-bold">
-                Propiertor
+                HeadMaster (Secular)
               </p>
               <button className="border-1 border-[#424874] text-white flex justify-center items-center text-center lg:justify-start lg:items-left mt-3 bg-[#06724b] font-bold px-7 py-2 w-full lg:w-1/2">
                 Contact Us
@@ -48,27 +41,7 @@ const Conversation = () => {
                 Abdul Razak Mohammed Umar
               </p>
               <p className=" text-center lg:text-left mt-2 text-[#06724b] font-bold">
-                Headmaster
-              </p>
-              <button className="border-1 border-[#00a401] text-white flex justify-center items-center text-center lg:justify-start lg:items-left mt-3 bg-[#06724b] font-bold px-7 py-2 w-full lg:w-1/2">
-                Contact Us
-              </button>
-            </div>
-            <div data-aos="zoom-in" className="max-w-[500px] backdrop-blur-md">
-              <img
-                alt="profile"
-                src={gado}
-                className="w-80 h-90 object-cover"
-                srcset=""
-              />
-              <p className="lg:text-left mt-2 text-[#06724b] font-bold text-center">
-                <span className="text-center lg:text-left mt-2 text-[#06724b] font-bold inline-block border-b-2 border-[#06724b] pb-1">
-                  Sheik
-                </span>
-                Mohammed Hafiz
-              </p>
-              <p className=" text-center lg:text-left mt-2 text-[#06724b] font-bold">
-                Asst. Headmaster
+                Headmaster (Islamic)
               </p>
               <button className="border-1 border-[#00a401] text-white flex justify-center items-center text-center lg:justify-start lg:items-left mt-3 bg-[#06724b] font-bold px-7 py-2 w-full lg:w-1/2">
                 Contact Us
@@ -81,4 +54,4 @@ const Conversation = () => {
   );
 };
 
-export default Conversation;
+export default CuriculumHead;

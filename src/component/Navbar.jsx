@@ -22,7 +22,7 @@ const links = [
     font: true,
   },
   {
-    text: "UBA Training",
+    text: "UBA Curriculum",
     path: "/training",
     modal: <TrainModal />,
     font: true,

@@ -27,7 +27,7 @@ const Footer = () => {
               About UBA
             </Link>
             <Link to='/training' className="text-lg text-white hover:scale-110">
-              UBA Training
+              UBA Curriculum
             </Link>{" "}
             <Link to='/social' className="text-lg text-white hover:scale-110">
               UBA Social
