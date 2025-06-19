@@ -34,7 +34,7 @@ const Testimonial = () => {
                 spiritual growth. UBA – Children Today, Leaders Tomorrow.
               </p>
               <footer>
-                <strong className="text-[#00a401] ">Farid Alhassan</strong>
+                <strong className="text-[#06724b] ">Farid Alhassan</strong>
               </footer>
               <p>
                 <em>UBA – Children Today, Leaders Tomorrow.</em>
@@ -68,7 +68,7 @@ const Testimonial = () => {
                 spiritual growth. UBA – Children Today, Leaders Tomorrow.
               </p>
               <footer>
-                <strong className="text-[#00a401] text-center">
+                <strong className="text-[#06724b] text-center">
                   Ayisha Ali Yaroo
                 </strong>
               </footer>
