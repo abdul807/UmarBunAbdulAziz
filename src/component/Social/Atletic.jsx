@@ -1,15 +1,35 @@
 import React from "react";
 
 import construction from "../../assets/construction.svg";
+import { NavLink, Outlet } from "react-router-dom";
 
 const Atletic = () => {
   return (
-    <div className="h-screen flex sm:mb-20 sm:mt-50 sm:flex-col items-center justify-center ">
-      {" "}
-      <div className="max-w-5xl mx-auto flex flex-col gap-10 items-center justify-center h-screen">
-        <img src={construction} alt="" srcset="" />
-        <h3 className="text-xl">Page Under Construction</h3>
+    <div className="max-w-5xl mx-auto flex flex-col gap-10 items-center justify-center h-screen">
+      <div className="flex sm:mt-50 mt-150  sm:mb-10  flex-row justify-center items-center gap-5">
+        <NavLink
+          to="community"
+          className={({ isActive }) =>
+            isActive
+              ? " text-[#06724b] px-2 font-bold border-b-5"
+              : "text-[#06724b] capitalize"
+          }
+        >
+          Community
+        </NavLink>
+        <NavLink
+          to="athletics"
+          className={({ isActive }) =>
+            isActive
+              ? " text-[#06724b] px-2 font-bold border-b-5"
+              : "text-[#06724b] capitalize"
+          }
+        >
+          Sports
+        </NavLink>
+        {/* <NavLink>Sports</NavLink> */}
       </div>
+      <Outlet />
     </div>
 
     // <div className="h-screen flex sm:flex-col items-center justify-center ">

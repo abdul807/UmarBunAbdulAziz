@@ -29,7 +29,7 @@ const MapComponent = () => {
   }, []);
 
   return (
-    <div className="h-[500px]  object-contain z-100" data-aos="zoom-in">
+    <div className="h-[500px] sm:-mb-50 -mb-120  object-contain z-100" data-aos="zoom-in">
       <div id="map" className="blur-xs hover:blur-none" style={{ width: "100%", height: "100%" }}></div>
     </div>
   );

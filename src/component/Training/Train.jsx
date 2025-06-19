@@ -7,17 +7,18 @@ import { Link } from "react-router-dom";
 const Train = () => {
   return (
     <section id="training  w-full">
-      <div className="sm:w-full h-[550px] relative">
+      <div className={`sm:w-full h-[550px] sm:h-[750px] relative`} data-aos="fade-up">
         <img
           src={train}
-          className=" object-cover w-full h-[500px]"
-          alt=""
-          srcset=""
+          alt="Amalitech Training"
+          className="w-full absolute h-[500px] sm:h-[720px] object-cover"
+          
         />
+        <div className='bg-black/50 relative w-full h-[500px] sm:h-[720px]'></div>
       </div>
       <div className="max-w-5xl  flex flex-col sm:flex-col gap-10 mx-auto text-center ">
         <h1
-          className="sm:font-extrabold font-bold  text-2xl sm:text-5xl  text-[#06724b]"
+          className="sm:font-extrabold font-bold  text-2xl sm:text-5xl  text-[#626F47]"
           data-aos="fade-down"
           
         >
@@ -26,12 +27,12 @@ const Train = () => {
         <p className="leading-7 sm:text-lg sm:text-left text-center pb-10">
           Umar Bun Abdul Aziz Islamic Institute runs two main curricula: the
         
-            Circular curriculum
+            secular curriculum
           
           and the Arabic curriculum. The
           <span className="text-[#06724b] font-bold">
             {" "}
-            <Link>Circular curriculum</Link>{" "}
+            <Link>secular curriculum</Link>{" "}
           </span>{" "}
           begins at the nursery level and continues through to Junior High
           School (JHS) three. It covers a wide range of subjects including

@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 
-
-import TrainModal from "./Modals/TrainModal";
-import SocialModal from "./Modals/SocialModal";
-
 import "aos/dist/aos.css";
 
 import "./navbar.css";
@@ -13,24 +9,23 @@ const links = [
   {
     text: "Home",
     path: "/",
-    modal: null,
   },
   {
     text: "About UBA",
     path: "/about",
-    // modal: <About />,
+
     font: true,
   },
   {
     text: "UBA Curriculum",
     path: "/training",
-    modal: <TrainModal />,
+
     font: true,
   },
   {
     text: "UBA Social",
-    path: "/social",
-    modal: <SocialModal />,
+    path: "/social/community",
+
     font: true,
   },
   {
@@ -40,7 +35,6 @@ const links = [
 ];
 
 const Navbar = () => {
-
   const [showAction, setShowAction] = useState(false);
 
   const toggleMenu = () => {
@@ -80,7 +74,7 @@ const Navbar = () => {
 
       <header className="bg-red flex relative justify-between items-center px-10 shadow-lg h-20">
         <h1 className="lg:text-3xl text-xl font-extrabold text-[#06724b]">
-          <Link to="/">Umar Bun Abdul Aziz</Link>
+          <Link to="/">UBA Islamic Institute</Link>
         </h1>
 
         <button
@@ -99,7 +93,11 @@ const Navbar = () => {
             >
               <NavLink
                 to={link.path}
-                className="text-lg text-[#06724b] hover:font-bold"
+                className={({ isActive }) =>
+                  isActive
+                    ? " text-[#06724b] px-2 font-bold border-b-5"
+                    : "text-[#06724b]"
+                }
               >
                 {link.text}
               </NavLink>

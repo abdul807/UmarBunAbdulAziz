@@ -1,10 +1,9 @@
 import React from "react";
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer/Footer";
-import Atletic from "../component/Atlete/Atletic";
+import Atletic from "../component/Social/Atletic";
 
-
-const AtleticPage = () => {
+const SocialPage = () => {
   return (
     <div className="h-screen">
       <Navbar />
@@ -14,4 +13,4 @@ const AtleticPage = () => {
   );
 };
 
-export default AtleticPage;
+export default SocialPage;

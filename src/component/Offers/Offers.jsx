@@ -9,8 +9,7 @@ import {
   faMosque,
   faTicket,
   faMedal,
-  faCalendar,
-  faSchool,
+
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -48,7 +47,8 @@ const Offers = () => {
 
         <div className="sm:w-2/3 flex sm:flex-row flex-col flex-wrap text-wrap h-full items-stretch">
           <div className="flex-1">
-            <Link to='/training'
+            <Link
+              to="/training"
               className="cursor-pointer border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
               data-aos="zoom-in"
             >
@@ -62,13 +62,13 @@ const Offers = () => {
                 <h1 className="text-center font-bold text-lg text-start pt-2">
                   Admissions
                 </h1>
-                <p className="text-lg w-60 sm:text-wrap p-5">
-                  To visit UBA contact the admissions team at
-                  ubaislamic@gmail.com. Click here to apply.
+                <p className="text-lg w-60 sm:break-words p-5">
+                  Contact on ubaislamicinstitute@gmail.com. Click here to apply.
                 </p>
               </div>
             </Link>
-            <Link to="/training"
+            <Link
+              to="/training"
               data-aos="zoom-in"
               className="cursor-pointer border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
             >
@@ -80,11 +80,11 @@ const Offers = () => {
               </div>
               <div className="message text-left text-lg leading-5">
                 <h1 className="text-center font-bold text-lg text-start pt-2">
-                  Arabic Education
+                  Curriculum
                 </h1>
                 <p className="text-lg w-60 sm:text-wrap p-5">
-                  Click for information about the exciting learning going on in
-                  our Arabic school.
+                  Click here to learn more about the curriculum that covers both
+                  Arabic and secular subjects
                 </p>
               </div>
             </Link>
@@ -108,7 +108,7 @@ const Offers = () => {
                 </p>
               </div>
             </div>
-            <Link to="/sports">
+            <Link to="social/athletics">
               <div
                 data-aos="zoom-in"
                 className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
@@ -132,46 +132,6 @@ const Offers = () => {
             </Link>
           </div>
           <div className="flex-1">
-            <div
-              data-aos="zoom-in"
-              className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
-            >
-              <div className="icon">
-                <FontAwesomeIcon
-                  icon={faCalendar}
-                  className="text-5xl text-[#06724b]"
-                />
-              </div>
-              <div className="message text-left text-lg leading-5">
-                <h1 className="text-center font-bold text-lg text-start pt-2">
-                  Calenders
-                </h1>
-                <p className="text-lg w-60 sm:text-wrap p-5">
-                  Visit our calendar page where you can view events and download
-                  the holiday calendar.
-                </p>
-              </div>
-            </div>
-            <Link to="/training"
-              data-aos="zoom-in"
-              className="cursor-pointer border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
-            >
-              <div className="icon">
-                <FontAwesomeIcon
-                  icon={faSchool}
-                  className="text-5xl text-[#06724b]"
-                />
-              </div>
-              <div className="message text-left text-lg leading-5">
-                <h1 className="text-center font-bold text-lg text-start pt-2">
-                  Circular Education
-                </h1>
-                <p className="text-lg w-60 sm:text-wrap p-5">
-                  Click for information about the exciting learning going on in
-                  our Circular school.
-                </p>
-              </div>
-            </Link>
             <div
               data-aos="zoom-in"
               className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
