@@ -3,8 +3,8 @@ import school from "../../assets/school.jpg"
 
 const Address = () => {
   return (
-    <section className="sm:mt-10 sm:mb-50 -mb-70 mt-50">
-      <div className="max-w-5xl mx-auto  grid grid-cols-1 place-items-center sm:grid-cols-4 gap-10">
+    <section className="sm:mt-20 sm:mb-50 -mb-70 mt-50">
+      <div className="max-w-5xl mx-auto  grid grid-cols-1 place-items-center text-center sm:grid-cols-4 gap-10">
         <div className="">
           <img src={school} alt="" srcset=""
           className="h-40 object-contain" />
