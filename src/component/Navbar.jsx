@@ -72,7 +72,7 @@ const Navbar = () => {
         </section>
       )}
 
-      <header className="bg-red flex relative justify-between items-center px-10 shadow-lg h-20">
+      <header className=" flex relative justify-between items-center px-10 shadow-lg h-20">
         <h1 className="lg:text-3xl text-xl font-extrabold text-[#06724b]">
           <Link to="/">UBA Islamic Institute</Link>
         </h1>

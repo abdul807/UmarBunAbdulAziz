@@ -11,7 +11,6 @@ import Navbar from "../component/Navbar";
 import Footer from "../component/Footer/Footer";
 import Background from "../component/Background/Background";
 import backgroundImage from "../assets/backfound.jpg"; // Adjust the path as necessary
-import { Outlet } from "react-router-dom";
 
 const HomePage = () => {
   return (

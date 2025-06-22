@@ -62,7 +62,7 @@ const Offers = () => {
                 <h1 className="text-center font-bold text-lg text-start pt-2">
                   Admissions
                 </h1>
-                <p className="text-lg w-60 sm:break-words p-5">
+                <p className="text-lg w-60 break-words p-5">
                   Contact on ubaislamicinstitute@gmail.com. Click here to apply.
                 </p>
               </div>
@@ -88,26 +88,7 @@ const Offers = () => {
                 </p>
               </div>
             </Link>
-            <div
-              data-aos="zoom-in"
-              className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
-            >
-              <div className="icon">
-                <FontAwesomeIcon
-                  icon={faPalette}
-                  className="text-5xl text-[#06724b]"
-                />
-              </div>
-              <div className="message text-left text-lg leading-5">
-                <h1 className="text-center font-bold text-lg text-start pt-2">
-                  Arts
-                </h1>
-                <p className="text-lg w-60 sm:text-wrap p-5">
-                  Here you can see how creative UBA students are in poetry and
-                  recitation of Holy Quran.
-                </p>
-              </div>
-            </div>
+ 
             <Link to="social/athletics">
               <div
                 data-aos="zoom-in"
@@ -149,6 +130,26 @@ const Offers = () => {
                 <p className="text-lg w-60 sm:text-wrap p-5">
                   Find out about our active Parent Teacher Organization,
                   community and get involved.
+                </p>
+              </div>
+            </div>
+                       <div
+              data-aos="zoom-in"
+              className="border-r-1  border-gray-200 sm:w-full border-b-1 flex justify-center items-center gap-2"
+            >
+              <div className="icon">
+                <FontAwesomeIcon
+                  icon={faPalette}
+                  className="text-5xl text-[#06724b]"
+                />
+              </div>
+              <div className="message text-left text-lg leading-5">
+                <h1 className="text-center font-bold text-lg text-start pt-2">
+                  Arts
+                </h1>
+                <p className="text-lg w-60 sm:text-wrap p-5">
+                  Here you can see how creative UBA students are in poetry and
+                  recitation of Holy Quran.
                 </p>
               </div>
             </div>

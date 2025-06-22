@@ -5,16 +5,16 @@ import topImage from "../../assets/bignew.jpeg";
 const Community = () => {
   return (
   <section className="">
-      <div className={`max-w-5xl mx-auto flex text-center`} data-aos="zoom-in">
+      <div className={`max-w-5xl mx-auto flex text-center`} >
         <div>
           {" "}
-          <img
+          <img 
             src={topImage}
             alt="Sports"
-            className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+            className="w-full h-[400px] object-cover rounded-lg shadow-lg" data-aos="zoom-in"
           />
           <h1 className="text-3xl font-bold mt-5">Community</h1>
-          <p className="text-lg mt-2 ">
+          <p className="text-lg mt-2" data-aos="ease-in">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
             nostrum libero vitae quo. Fuga nisi, recusandae in deleniti voluptas
             aliquam alias quisquam quasi consectetur debitis dicta repellat a

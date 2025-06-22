@@ -46,7 +46,7 @@ const Explore = () => {
           data-aos="fade-down"
         >
           <Link className=" border-2 capitalize  border-white px-3 text-white  rounded-lg transition-transform duration-200 ease-in-out hover:scale-110">
-            more about our boarding
+            more about our boarding facilities
           </Link>
         </div>
       </div>

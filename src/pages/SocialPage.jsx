@@ -5,7 +5,7 @@ import Atletic from "../component/Social/Atletic";
 
 const SocialPage = () => {
   return (
-    <div className="h-screen">
+    <div className="min-h-screen" >
       <Navbar />
       <Atletic />
       <Footer />

@@ -1,6 +1,5 @@
 import React from "react";
 import about from "../../assets/about2.jpg";
-import construction from "../../assets/construction.svg"; // Assuming the image is in the assets folder
 
 const About = () => {
   return (

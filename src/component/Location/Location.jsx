@@ -8,15 +8,16 @@ const Location = () => {
     <section className="h-screen sm:mt-50 mt-30">
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col text-center sm:flex-row  sm:items-start justify-center">
-          <h1 className="sm:w-1/2 font-bold capitalize mb-5 text-xl text-center sm:text-3xl">Akim Oda office</h1>
+          <h1 className="sm:w-1/2 text-[#06724b] font-extrabold capitalize mb-5 text-2xl text-center sm:text-3xl">
+            Akim Oda office
+          </h1>
           <p className="text-lg sm:w-1/2  ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum. Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Consectetur, vitae ipsum porro fugit vero nobis fugiat quos,
-            natus laboriosam, voluptas corrupti? Error, molestias maxime
-            dolorem, commodi eligendi sed adipisci, cum fugit vitae at fugiat
-            provident unde quae non eveniet eos obcaecati magnam dolorum?
-            Dignissimos numquam amet quibusdam, atque tempore similique.
+            The Akim Oda office serves as our main office. Here, you can access
+            comprehensive information about the institution, including both
+            secular and Islamic studies, as well as details about all our
+            programs. The office is open at all times for your convenience. We
+            also hold in-person meetings, and marriage counseling services are
+            available here.
           </p>
         </div>
         <div className="mt-10">
@@ -24,13 +25,6 @@ const Location = () => {
         </div>
       </div>
     </section>
-    // <div className="h-screen flex sm:flex-col items-center  justify-center mb-20 ">
-    //   {" "}
-    //   <div className="max-w-5xl mx-auto flex flex-col gap-10 items-center justify-center  h-screen">
-    //     <img src={construction} alt="" srcset="" />
-    //     <h3 className="text-xl">Page Under Construction</h3>
-    //   </div>
-    // </div>
   );
 };
 
