@@ -5,7 +5,7 @@ import { NavLink, Outlet } from "react-router-dom";
 const Atletic = () => {
   return (
     <div className="max-w-5xl mx-auto flex flex-col gap-10 items-center justify-center min-h-screen">
-      <div className="flex sm:-mt-0 mt-150  sm:mb-10  flex-row justify-center items-center gap-5">
+      <div className="flex mt-30    flex-row justify-center items-center gap-5">
         <NavLink
           to="community"
           className={({ isActive }) =>

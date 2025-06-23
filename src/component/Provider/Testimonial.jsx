@@ -70,7 +70,7 @@ const Testimonial = () => {
             <blockquote>
               <p
                 className="sm:text-justify p-5 sm:leading-8 sm:text-lg"
-                data-aos="zoom-in"
+                data-aos="slide-right"
               >
                 I am a student at UBA Islamic Institute. I am incredibly
                 grateful for the opportunity to be part of this wonderful
@@ -102,7 +102,7 @@ const Testimonial = () => {
               </p>
             </blockquote>
           </div>
-          <div className="sm:w-1/2 h-full" data-aos="slide-right">
+          <div className="sm:w-1/2 h-full" data-aos="zoom-in" >
             {" "}
             <img
               alt="profile"
@@ -114,55 +114,6 @@ const Testimonial = () => {
         </div>
       </div>
     </section>
-    // <section>
-    //   <div className="max-w-5xl bg-white  mx-auto">
-    //     <h1 className="capitalize text-center sm:mt-5 leading-10 text-2xl sm:text-5xl text-[#06724b]   mb-5 font-extrabold">
-    //       Testimonials
-    //     </h1>
-    //   </div>
-    //   <div className="flex flex-col justify-center items-center gap-5">
-    //     <div className="flex justify-center items-center gap-10">
-    //       <div className="sm:w-1/2">
-    // <blockquote>
-    //   <p className="sm:text-justify sm:leading-8 sm:text-lg">
-    //     UBA has truly shaped me into a better human being—both in my
-    //     Islamic faith and in worldly matters. During my time here, I had
-    //     the opportunity to memorize the entire Qur'an, study numerous
-    //     hadiths, and learn deeply about the life and teachings of the
-    //     Holy Prophet Muhammad (peace be upon him). UBA has provided me
-    //     with more than just knowledge; it has nurtured my character,
-    //     discipline, and purpose. I wholeheartedly recommend this great
-    //     institution to anyone seeking both academic excellence and
-    //     spiritual growth. UBA – Children Today, Leaders Tomorrow.
-    //   </p>
-    //   <footer>
-    //     <strong className="text-[#00a401]">Farid Alhassan</strong>
-    //   </footer>
-    //   <p>
-    //     <em>UBA – Children Today, Leaders Tomorrow.</em>
-    //   </p>
-    // </blockquote>
-    //       </div>
-    //       <div className="image  " data-aos="fade-left">
-
-    //       </div>
-    //     </div>
-    //     <div>second</div>
-    //   </div>
-    // </section>
-    // <section id="provider">
-    //   <div className="max-w-5xl bg-white  mx-auto ">
-    //     <div className="info sm:w-1/2" data-aos="fade-right">
-    //       <h1 className="capitalize text-center leading-10 text-2xl sm:text-5xl text-[#00a401]   mb-5 font-extrabold">
-    //         Testimonials
-    //       </h1>
-    //     </div>
-    //     <div className="flex flex-col sm:flex-row gap-20 items-center justify-center m-4 p-5">
-
-    //     </div>
-
-    //   </div>
-    // </section>
   );
 };
 

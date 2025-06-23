@@ -2,12 +2,20 @@ import "aos/dist/aos.css";
 import topImage from "../../assets/bignew.jpeg";
 import "./image.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import Modal from "../Conversation/Modal";
 const Image = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  }
   // text-[#00a401] - deep green
   // text-[#a7c263] -light green 
   
   return (
     <section className="">
+      {showModal && <Modal setShow={setShowModal} show={showModal}/>}
       <div className={`sm:w-full h-[750px] relative`} data-aos="fade-up">
         <img
           src={topImage}
@@ -27,7 +35,7 @@ const Image = () => {
           Children today, leaders tomorrow
         </div>
         <div className="sm:justify-start flex justify-center space-x-4 text-white mt-20">
-          <button className="capitalize bg-white px-3 py-3 text-[#06724b]  sm:px-15  font-extrabold shadow-">
+          <button onClick={toggleModal} className="capitalize bg-white px-3 py-3 text-[#06724b]  sm:px-15  font-extrabold shadow-">
             contact us
           </button>
           <Link

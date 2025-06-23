@@ -13,8 +13,11 @@ import Background from "../component/Background/Background";
 import backgroundImage from "../assets/backfound.jpg"; // Adjust the path as necessary
 
 const HomePage = () => {
+
   return (
     <div className="min-h-screen bg-white relative">
+    {/* {notification && <Notification shownotification = {notification} setnotification = {setNotification} />} */}
+
       {/* <Background> */}
       <Navbar />
       <Image />

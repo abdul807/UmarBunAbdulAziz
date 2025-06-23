@@ -40,7 +40,7 @@ const Offers = () => {
             welcoming environment for all, ensuring that everyone has access to
             the resources they need to thrive.
           </p>
-          <Link className="hover:text-white transition-colors duration-200 cursor-pointer capitalize border-1 border-[#424874] text-white flex justify-center items-center text-center sm:justify-start sm:items-left mt-3 bg-[#06724b] font-bold px-7 py-2 shadow-5xl w-full sm:w-2/3 rounded-xl">
+          <Link to="/training" className="hover:text-white transition-colors duration-200 cursor-pointer capitalize border-1 border-[#424874] text-white flex justify-center items-center text-center sm:justify-start sm:items-left mt-3 bg-[#06724b] font-bold px-7 py-2 shadow-5xl w-full sm:w-2/3 rounded-xl">
             Learn more about us
           </Link>
         </div>
